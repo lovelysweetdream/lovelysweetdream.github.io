@@ -1,0 +1,55 @@
+::selection {
+    background: rgb(243, 254, 254);
+    color: rgb(21, 21, 30);
+}
+body {
+    background: rgb(21, 21, 30);
+    color: rgb(243, 254, 254);
+    font-size: 1.17em;
+    margin: 0;
+    box-sizing: border-box;
+}
+hr {
+    background: linear-gradient(to right, #eb4998, #f38f64, #fbdf84, #8fda92, #47cbc8, #5d92ff, #aa69d5);
+    height: 3px;
+    width: 450px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+a {
+    color: rgb(243, 254, 254);
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1.7px;
+}
+a:hover {
+    text-decoration: none;
+}
+.content {
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+    padding: 5px;
+}
+#left, #right {
+	background: linear-gradient(to bottom, rgb(203,87,155), rgb(212,156,89), rgb(168,215,101), rgb(103,208,177), rgb(88,147,224), rgb(145,81,212));
+	position: fixed;
+}
+#left, #right {
+	top: 0; bottom: 0;
+	width: 10px;
+}
+#left { left: 0; }
+#right { right: 0; }
+@media screen and (max-width: 635px) {
+    #left, #right {
+        width: 7px;
+    }
+    .content {
+        width: calc(100% - 40px);
+    }
+    hr {
+        width: 70%;
+    }
+}
